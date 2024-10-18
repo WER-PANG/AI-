@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雅思口语练习 - AI英语学习助手</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- 与 index.html 相同的导航栏 -->
+    </header>
+
+    <main>
+        <h1>雅思口语练习</h1>
+        
+        <div class="practice-options">
+            <button id="start-practice">开始练习</button>
+            <button id="mock-test">模拟考试</button>
+            <button id="view-history">查看历史记录</button>
+        </div>
+
+        <div id="practice-area" style="display: none;">
+            <h2>模拟对话</h2>
+            <div id="ai-response"></div>
+            <input type="text" id="user-input" placeholder="在这里输入你的回答...">
+            <button id="submit-answer">提交</button>
+        </div>
+
+        <div id="result-area" style="display: none;">
+            <h2>练习结果</h2>
+            <p>得分: <span id="score"></span></p>
+            <h3>改进建议:</h3>
+            <ul id="suggestions"></ul>
+        </div>
+    </main>
+
+    <footer>
+        <!-- 与 index.html 相同的页脚 -->
+    </footer>
+
+    <script src="ielts.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>四六级听力练习 - AI英语学习助手</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- 与 index.html 相同的导航栏 -->
+    </header>
+
+    <main>
+        <h1>四六级听力练习</h1>
+        
+        <div class="practice-options">
+            <button id="start-listening">开始听力练习</button>
+            <button id="mock-test">模拟测试</button>
+            <button id="view-history">查看历史记录</button>
+        </div>
+
+        <div id="listening-area" style="display: none;">
+            <h2>听力练习</h2>
+            <audio id="audio-player" controls>
+                <source src="" type="audio/mpeg">
+                您的浏览器不支持音频元素。
+            </audio>
+            <div id="question-area"></div>
+            <button id="submit-answers">提交答案</button>
+        </div>
+
+        <div id="result-area" style="display: none;">
+            <h2>练习结果</h2>
+            <p>得分: <span id="score"></span></p>
+            <h3>错题分析:</h3>
+            <ul id="analysis"></ul>
+        </div>
+    </main>
+
+    <footer>
+        <!-- 与 index.html 相同的页脚 -->
+    </footer>
+
+    <script src="cet.js"></script>
+</body>
+</html>
